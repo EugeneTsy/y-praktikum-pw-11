@@ -1,0 +1,13 @@
+.small-button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 4px 8px;
+    color: white;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .small-button:focus {
+    outline-color: greenyellow;
+  }

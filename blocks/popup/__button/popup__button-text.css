@@ -1,0 +1,11 @@
+.popup__button-text {
+    color: rgba(0, 0, 0, .2);
+    font-size: 18px;
+    background: transparent;
+  }
+
+  .popup__button-text_active {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    background-color: black;
+  }

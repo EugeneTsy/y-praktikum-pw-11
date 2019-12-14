@@ -1,0 +1,14 @@
+.user-info__button-edit {
+    margin-top: 28px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 4px 8px;
+    color: white;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+}
+
+  .user-info__button-edit:focus {
+    outline-color: greenyellow;
+  }
