@@ -3,30 +3,32 @@ export class Popup {
     this.popup = popup;
     this.rules = rules;
   }
+  static loaderInBtn(loading, btn, btnDefaultValue) {
+    if (loading) {
+      btn.textContent = "Загружаю...";
+    } else btn.textContent = btnDefaultValue;
+  }
   show() {
-    this.popup.classList.add('popup_is-opened');
+    this.popup.classList.add("popup_is-opened");
   }
   hide() {
-    if (event.target.classList.contains('popup__close')) {
-      this.popup.classList.remove('popup_is-opened');
+    if (event.target.classList.contains("popup__close")) {
+      this.popup.classList.remove("popup_is-opened");
     }
   }
   textValidation(input, errorMessageWrapper) {
     let isValid = false;
     if (this.rules.emptyInput.test(input.value)) {
       errorMessageWrapper.textContent = this.rules.emptyInput.error;
-    }
-    else if (this.rules.twoToThirty.test(input.value)) {
+    } else if (this.rules.twoToThirty.test(input.value)) {
       errorMessageWrapper.textContent = this.rules.twoToThirty.error;
-    }
-    else {
-      errorMessageWrapper.textContent = '';
+    } else {
+      errorMessageWrapper.textContent = "";
       isValid = true;
     }
     if (isValid) {
       this.button.classList.add(`${this.button.classList[1]}_active`);
-    }
-    else {
+    } else {
       this.button.classList.remove(`${this.button.classList[1]}_active`);
     }
     return isValid;

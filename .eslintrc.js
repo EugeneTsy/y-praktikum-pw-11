@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        // "airbnb-base"
+        "airbnb-base"  
     ],
     "globals": {
         "Atomics": "readonly",
