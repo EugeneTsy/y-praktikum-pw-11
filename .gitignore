@@ -1,5 +1,3 @@
 /node_modules
-dist
-#*.js
-*.json
-*workspace
+/dist
+project-work-11.code-workspace
