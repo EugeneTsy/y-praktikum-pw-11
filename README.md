@@ -4,8 +4,9 @@
 
 ## Описание Проекта
 __Используемые технологии:__ JS, CSS, HTML, WebPack, GIT, Babel.
+---
+[ссылка на проект](https://eugenetsy.github.io/y-praktikum-pw-11 "ссылка на проект")
 
-(ссылка на деплой)[https://eugenetsy.github.io/y-praktikum-pw-11/]
 ---
 **В проекте нужно было выполнить следующие задачи:**
 1. Настроить сборки build и dev
