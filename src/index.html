@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('../images/logo.svg').default%>" alt="mesto logo" class="logo" />
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -42,14 +41,14 @@
 
     <div class="popup popup_image">
       <div class="popup__lightbox">
-          <img src="./images/close.svg" alt="" class="popup__close">
+          <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close">
           <img class="popup__scaled-image" src=""></img>
       </div>  
     </div>
 
     <div class="popup popup_place">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="place">
             <input type="text" name="place" class="popup__input popup__input_type_text" placeholder="Название">
@@ -63,7 +62,7 @@
       
       <div class="popup popup_profile">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close">
+          <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close">
           <h3 class="popup__title">Редактировать профиль</h3>
           <form class="popup__form" name="profile">
             <input type="text" name="name" class="popup__input popup__input_type_text" placeholder="Имя" value='' min="2" max="30">
@@ -76,5 +75,4 @@
     </div>
   </div>
 </body>
-<script src="./scripts/script.js"></script>
 </html>
