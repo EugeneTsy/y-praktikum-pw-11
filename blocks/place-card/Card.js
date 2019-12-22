@@ -32,6 +32,10 @@ export class Card {
   }
   like(event) {
     if (event.target.classList.contains("place-card__like-icon")) {
+      let cardId = event.target.parentNode.parentNode.parentNode.id;
+      api.putLikeTheCard(cardId)
+      .then(res => {console.log(res)})
+
       event.target.classList.toggle("place-card__like-icon_liked");
     }
   }

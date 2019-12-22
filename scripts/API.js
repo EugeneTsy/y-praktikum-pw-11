@@ -23,9 +23,9 @@ export class API {
   }
 
   patchProfile (name, about) {
-    return fetch(api.url + api.userUrl, {
+    return fetch(this.url + this.userUrl, {
       method: 'PATCH',
-      headers: api.headers,
+      headers: this.headers,
       body: JSON.stringify({
           name: name.value,
           about: about.value,
@@ -60,6 +60,14 @@ export class API {
       headers: api.headers,
     })
       .then((res) => api.getResponseJson(res))
+  }
+
+  putLikeTheCard(cardId) {
+    return fetch(api.url + '/cards/like/' + cardId, {
+      method: 'PUT',
+      headers: this.headers
+    })
+    .then((res) => this.getResponseJson(res))
   }
 }
 
